@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div id="main">
+        <input type="text" name="passCon" id="passCon">
+        <div id="passForm">
+            <div>
+                <span>Contains Length</span>
+                <input type="number" id="passLen" value="10">
+            </div>
+            <div>
+                <span>Contains Uppercase</span>
+                <input type="radio" id="passUpp" checked>
+            </div>
+            <div>
+                <span>Contains Lowercase</span>
+                <input type="radio" id="passLow">
+            </div>
+            <div>
+                <span>Contains Numbers</span>
+                <input type="radio" id="passNum">
+            </div>
+            <div>
+                <span>Contains Symbols</span>
+                <input type="radio" id="passSym">
+            </div>
+            <button id="passGen" onclick="passGen()">Generate</button>
+        </div>
+    </div>
+    <script src="./passGen.js"></script>
+</body>
+</html>
